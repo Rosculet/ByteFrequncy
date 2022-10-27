@@ -1,9 +1,5 @@
-import java.awt.List;
 import java.io.*;
 import java.util.*;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Main1 {
     public static void main(String[] args) {
@@ -19,8 +15,8 @@ public class Main1 {
             for (byte aByte : bytes) {
                 if (!hashMap.containsKey(aByte))
                     hashMap.put(aByte, val);
-                else hashMap.put(aByte, val++);
-            }
+                else hashMap.put(aByte, val++);}
+
             System.out.println(hashMap);
 
         } catch (IOException e) { e.getStackTrace(); }
